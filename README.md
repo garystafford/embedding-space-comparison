@@ -2,6 +2,10 @@
 
 See the post, [Different Embedding Models, Different Spaces: The Hidden Cost of Model Upgrades](https://garystafford.medium.com/different-embedding-models-different-spaces-the-hidden-cost-of-model-upgrades-899db24ad233) for more details. A systematic comparison of four state-of-the-art text embedding models reveals why model switching degrades retrieval quality.
 
+## Code
+
+I recommend the latest [embeddings-comparison_v2.ipynb](./embeddings-comparison_v2.ipynb) notebook that leverages a newer and more diverse set of quotes to generate embeddings.
+
 ## Models
 
 To illustrate this concretely, we can run a series of experiments with several popular, smaller, open-weight text embedding models, all available on Hugging Face.
