@@ -1,5 +1,26 @@
 # Dense Vector Embedding Space Comparison
 
+See the post, [Different Embedding Models, Different Spaces: The Hidden Cost of Model Upgrades](https://garystafford.medium.com/different-embedding-models-different-spaces-the-hidden-cost-of-model-upgrades-899db24ad233) for more details. A systematic comparison of four state-of-the-art text embedding models reveals why model switching degrades retrieval quality.
+
+## Models
+
+To illustrate this concretely, we can run a series of experiments with several popular, smaller, open-weight text embedding models, all available on Hugging Face.
+
+- Qwen/Qwen3-Embedding-0.6B
+- TencentBAC/Conan-embedding-v1
+- google/embeddinggemma-300m
+- ibm-granite/granite-embedding-125m-english
+
+![models](./previews/models.png)
+
+## Comparative Vector Spaces
+
+All models are compatible with SentenceTransformers, a Python framework maintained by Hugging Face, for generating high-quality text (and some image) embeddings using transformer models. These embeddings power tasks like semantic search, retrieval-augmented generation (RAG), clustering, similarity, reranking, and more. This compatibility allows us to reuse the same code across models to create and use our embeddings. All you need is a free Hugging Face account with a User Access Token.
+
+![vector spaces](./previews/comparison_dim.png)
+
+![vector spaces](./previews/comparison_models.png)
+
 ## Prerequisites
 
 - Python 3.12+
